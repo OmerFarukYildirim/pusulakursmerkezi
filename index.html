@@ -1,0 +1,833 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}html{scroll-behavior:smooth;}section[id],#sss{scroll-margin-top:6rem;}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "error": "#ba1a1a", "on-error-container": "#93000a", "on-error": "#ffffff", "surface": "#f5faf9", "on-surface-variant": "#41484b", "surface-tint": "#3d6472", "on-tertiary-container": "#8ba39e", "on-secondary-fixed": "#331200", "primary": "#00242e", "on-primary-container": "#7da4b3", "on-secondary": "#ffffff", "error-container": "#ffdad6", "background": "#f5faf9", "on-primary-fixed": "#001f28", "tertiary-container": "#233936", "on-tertiary": "#ffffff", "surface-container": "#eaefee", "on-secondary-fixed-variant": "#773300", "tertiary": "#0d2320", "inverse-primary": "#a5cddd", "secondary": "#9c4500", "on-secondary-container": "#5e2700", "on-background": "#171d1c", "on-tertiary-fixed": "#091f1c", "secondary-container": "#ff7a1b", "outline": "#71787b", "primary-container": "#0e3a47", "primary-fixed": "#c0e9f9", "on-surface": "#171d1c", "inverse-on-surface": "#edf2f1", "surface-bright": "#f5faf9", "tertiary-fixed-dim": "#b3ccc6", "on-tertiary-fixed-variant": "#354b47", "outline-variant": "#c1c7cb", "primary-fixed-dim": "#a5cddd", "surface-container-highest": "#dee3e3", "inverse-surface": "#2c3131", "surface-variant": "#dee3e3", "on-primary-fixed-variant": "#244c59", "tertiary-fixed": "#cfe8e2", "secondary-fixed-dim": "#ffb68e", "surface-container-high": "#e4e9e8", "secondary-fixed": "#ffdbca", "surface-container-low": "#f0f5f4", "surface-dim": "#d6dbda", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter-sm": "1rem", "space-md": "1.25rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "margin": "3rem", "space-sm": "0.75rem" }, "fontFamily": { "display-hero-mobile": [ "Bricolage Grotesque" ], "headline-sm": [ "Bricolage Grotesque" ], "title-md": [ "DM Sans" ], "display-hero": [ "Bricolage Grotesque" ], "body-md": [ "DM Sans" ], "headline-lg-mobile": [ "Bricolage Grotesque" ], "label-lg": [ "DM Sans" ], "headline-md": [ "Bricolage Grotesque" ], "label-md": [ "DM Sans" ], "label-sm": [ "DM Sans" ], "headline-lg": [ "Bricolage Grotesque" ], "body-lg": [ "DM Sans" ], "body-sm": [ "DM Sans" ] }, "fontSize": { "display-hero-mobile": [ "38px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-sm": [ "22px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "title-md": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-md": [ "16px", { "lineHeight": "25px", "fontWeight": "400" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-lg": [ "15px", { "lineHeight": "20px", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "label-md": [ "13px", { "lineHeight": "18px", "fontWeight": "500" } ], "label-sm": [ "11px", { "lineHeight": "14px", "fontWeight": "500" } ], "headline-lg": [ "40px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "body-sm": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center shrink-0"><a class="inline-flex items-center justify-center rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" data-path="ana-sayfa" href="#ana-sayfa" aria-label="Pusula Kurs Merkezi ana sayfa"><img alt="Pusula Kurs Merkezi amblemi" class="h-[72px] w-auto max-w-none object-contain" src="/images/pusula-logo.png"></a></div><nav class="hidden xl:flex items-center gap-1 text-on-surface-variant"><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="ana-sayfa" href="#ana-sayfa">Ana Sayfa</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="programlar" href="#hedef-secici">Programlar</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="rota" href="#rota">Rota</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="kutuphane" href="#kutuphane">Kütüphane</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sss" href="#sss">SSS</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="iletisim" href="#iletisim-formu">İletişim</a></nav><div class="flex items-center gap-3 shrink-0"><a class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary-container text-on-secondary font-label-lg text-label-lg transition-transform active:scale-95 shadow-[0_2px_12px_rgba(255,122,27,0.24)] hover:bg-secondary hover:text-on-secondary" href="https://wa.me/903260000000" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="">WhatsApp'tan Yaz</span></a><a class="inline-flex items-center px-4 py-2 rounded-full font-label-md text-label-md text-primary hover:bg-surface-container-high transition-colors" data-path="iletisim" href="#iletisim-formu">Bilgi Al</a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- 1. Hero Section -->
+<section id="ana-sayfa" class="relative bg-primary-container text-on-primary min-h-[calc(100vh-5rem)] flex items-center overflow-hidden px-6 lg:px-12 py-16">
+<!-- Subtle technical grid background effect -->
+<div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#9db5b0_1px,transparent_1px)] [background-size:32px_32px]"></div>
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-7 flex flex-col items-start gap-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/40 text-on-primary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="">Dörtyol'un akademik pusulası</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero tracking-tight text-on-primary">
+          Hedefini seç, yönünü birlikte çizelim.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-xl">
+          Dörtyol'da LGS, YKS ve ara sınıf öğrencileri için birebir ilgiyle sınav hazırlığı.
+        </p>
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-secondary-container text-on-primary font-label-lg text-label-lg transition-transform hover:scale-[1.02] active:scale-95 shadow-[0_4px_20px_rgba(255,122,27,0.3)]" href="#hedef-secici">
+            Programları gör
+          </a>
+<a class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-transparent hover:bg-white/10 text-on-primary font-label-lg text-label-lg transition-colors" href="https://wa.me/905000000000" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="">WhatsApp'tan yaz</span>
+</a>
+</div>
+<!-- Metric highlights -->
+<div class="grid grid-cols-3 gap-6 pt-10 mt-4 max-w-lg w-full">
+<div>
+<div class="font-headline-md text-headline-md text-on-primary">14</div>
+<div class="font-label-sm text-label-sm text-on-primary-container">Maks. sınıf mevcudu</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-secondary-container">1:1</div>
+<div class="font-label-sm text-label-sm text-on-primary-container">Özel rehberlik takibi</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-primary">%96</div>
+<div class="font-label-sm text-label-sm text-on-primary-container">Hedef yerleşme oranı</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Iconic Compass Dial Motif -->
+<div class="lg:col-span-5 flex justify-center items-center relative">
+<div class="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] flex items-center justify-center">
+<!-- Fine Ambient Compass Ring -->
+<svg class="w-full h-full text-outline-variant/30 select-none animate-[spin_120s_linear_infinite]" viewBox="0 0 400 400">
+<!-- Concentric rings -->
+<circle cx="200" cy="200" fill="none" r="190" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1.2"></circle>
+<circle cx="200" cy="200" fill="none" r="170" stroke="currentColor" stroke-width="0.8"></circle>
+<circle cx="200" cy="200" fill="none" r="145" stroke="currentColor" stroke-dasharray="2 3" stroke-width="0.5"></circle>
+<circle cx="200" cy="200" fill="none" r="90" stroke="currentColor" stroke-width="0.5"></circle>
+<!-- Degree ticks every 15 degrees -->
+<g transform="translate(200, 200)">
+<!-- 24 ticks -->
+<line stroke="currentColor" stroke-width="1" x1="0" x2="0" y1="-170" y2="-158"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(15)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(30)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="#ff7a1b" stroke-width="1.2" transform="rotate(45)" x1="0" x2="0" y1="-170" y2="-158"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(60)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(75)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(90)" x1="0" x2="0" y1="-170" y2="-158"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(105)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(120)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(135)" x1="0" x2="0" y1="-170" y2="-158"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(150)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(165)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(180)" x1="0" x2="0" y1="-170" y2="-158"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(195)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(210)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(225)" x1="0" x2="0" y1="-170" y2="-158"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(240)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(255)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(270)" x1="0" x2="0" y1="-170" y2="-158"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(285)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(300)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="1" transform="rotate(315)" x1="0" x2="0" y1="-170" y2="-158"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(330)" x1="0" x2="0" y1="-170" y2="-162"></line>
+<line stroke="currentColor" stroke-width="0.75" transform="rotate(345)" x1="0" x2="0" y1="-170" y2="-162"></line>
+</g>
+<!-- Cardinal labels (Turkish: Kuzey, Doğu, Güney, Batı) -->
+<text fill="#c1c7cb" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="200" y="44">K</text>
+<text fill="#c1c7cb" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="362" y="204">D</text>
+<text fill="#c1c7cb" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="200" y="366">G</text>
+<text fill="#c1c7cb" font-family="'DM Sans', sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="38" y="204">B</text>
+</svg>
+<!-- Fixed Dynamic Compass Needle Pointing North-East (45°) -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none transition-transform duration-700 ease-out" style="transform: rotate(45deg);">
+<svg class="w-72 h-72 drop-shadow-[0_8px_24px_rgba(255,122,27,0.35)]" viewBox="0 0 240 240">
+<!-- North needle (Citrus) -->
+<polygon fill="#ff7a1b" points="120,20 127,120 120,114 113,120"></polygon>
+<!-- South needle (Subtle sage) -->
+<polygon fill="#7da4b3" opacity="0.6" points="120,220 126,120 120,126 114,120"></polygon>
+<!-- Needle Central Pin Assembly -->
+<circle cx="120" cy="120" fill="#00242e" r="14"></circle>
+<circle cx="120" cy="120" fill="#ff7a1b" r="6"></circle>
+<circle cx="120" cy="120" fill="#ffffff" r="2.5"></circle>
+</svg>
+</div>
+<!-- Technical dial coordinate badge -->
+<div class="absolute -bottom-4 bg-primary/80 backdrop-blur-md px-4 py-1.5 rounded-full text-on-primary-container font-label-sm text-label-sm">
+            36°51'02"K · 36°13'40"D Dörtyol
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Goal Picker Section: "Hangi yoldasın?" -->
+<section class="bg-surface py-20 px-6 lg:px-12" id="hedef-secici">
+<div class="max-w-7xl mx-auto flex flex-col gap-12">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-container tracking-wider uppercase font-semibold">Hedef Seçici</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Hangi yoldasın?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+            Seçtiğin hedefe göre rotanı ve programını hemen keşfet.
+          </p>
+</div>
+<div class="text-right hidden md:block">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+            Dinamik Program İnceleme
+          </span>
+</div>
+</div>
+<!-- Interactive 4 Program Chips Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+<button class="program-tab flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all text-left" id="tab-lgs" onclick="selectProgram('lgs')" type="button">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">8. Sınıf Sınav Grubu</span>
+<span class="font-title-md text-title-md text-primary font-bold">LGS (8. sınıf)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[22px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<button class="program-tab flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-primary text-on-primary shadow-md transition-all text-left relative overflow-hidden" id="tab-yks" onclick="selectProgram('yks')" type="button">
+<div class="absolute top-0 right-0 w-2 h-full bg-secondary-container"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-container font-semibold">En Çok Tercih Edilen</span>
+<span class="font-title-md text-title-md text-on-primary font-bold">YKS – TYT/AYT</span>
+</div>
+<span class="material-symbols-outlined text-secondary-container text-[22px]">navigation</span>
+</button>
+<button class="program-tab flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all text-left" id="tab-ara" onclick="selectProgram('ara')" type="button">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">9, 10 ve 11. Sınıflar</span>
+<span class="font-title-md text-title-md text-primary font-bold">Ara sınıf takviye</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[22px]">arrow_forward</span>
+</button>
+<button class="program-tab flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all text-left" id="tab-ozel" onclick="selectProgram('ozel')" type="button">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bireysel Odaklı</span>
+<span class="font-title-md text-title-md text-primary font-bold">Birebir özel ders</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[22px]">arrow_forward</span>
+</button>
+</div>
+<!-- Active Program Detail Panel (28px radius white surface with side compass visual) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 bg-surface-container-lowest rounded-[28px] overflow-hidden shadow-sm">
+<!-- Interactive Compass Angle Indicator on Left/Sidebar -->
+<div class="lg:col-span-4 bg-primary-container p-8 lg:p-12 text-on-primary flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary font-label-sm text-label-sm text-on-primary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+              Pusula Açı Yönelimi
+            </div>
+<h3 class="font-headline-md text-headline-md text-on-primary mt-4" id="panel-badge-title">
+              45° Kuzeydoğu Rotası
+            </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-2" id="panel-badge-desc">
+              Üniversite sınavı için yoğunlaştırılmış etüt, seri deneme ve koçluk döngüsü devrede.
+            </p>
+</div>
+<div class="py-8 flex justify-center items-center relative z-10">
+<div class="w-48 h-48 rounded-full bg-primary flex items-center justify-center relative shadow-inner">
+<svg class="w-full h-full p-2 text-outline/40" viewBox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="46" stroke="currentColor" stroke-dasharray="2 3" stroke-width="1"></circle>
+<circle cx="50" cy="50" fill="none" r="38" stroke="currentColor" stroke-width="0.5"></circle>
+<line stroke="currentColor" stroke-width="1.5" x1="50" x2="50" y1="4" y2="10"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="96" x2="90" y1="50" y2="50"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="50" x2="50" y1="96" y2="90"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="4" x2="10" y1="50" y2="50"></line>
+</svg>
+<!-- Rotatable Compass needle based on tab -->
+<div class="absolute inset-0 flex items-center justify-center transition-transform duration-500 ease-out" id="interactive-needle" style="transform: rotate(45deg);">
+<div class="w-1 h-36 relative flex flex-col justify-between items-center">
+<div class="w-2.5 h-16 bg-secondary-container rounded-t-full"></div>
+<div class="w-2 h-14 bg-on-primary-container/40 rounded-b-full"></div>
+</div>
+<div class="absolute w-5 h-5 rounded-full bg-on-primary flex items-center justify-center shadow">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-primary-container pt-4">
+<span class="">Dörtyol Kampüsü</span>
+<span class="text-secondary-container font-mono font-bold" id="needle-degrees">045° KB</span>
+</div>
+</div>
+<!-- Detail Information Content -->
+<div class="lg:col-span-8 p-8 lg:p-12 flex flex-col justify-between">
+<div class="space-y-8" id="program-content">
+<div>
+<div class="flex flex-wrap items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Aktif Kayıt Dönemi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2026-2027 Eğitim Öğretim Yılı</span>
+</div>
+<h3 class="font-headline-lg text-headline-md sm:text-headline-lg text-primary mt-3" id="prog-title">
+                YKS Hazırlık (TYT-AYT)
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1" id="prog-target">
+                Hedef Kitle: 11. sınıf, 12. sınıf ve mezun öğrenciler
+              </p>
+</div>
+<!-- Key Metric Chips -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-4 rounded-xl bg-surface-container flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Haftalık Ders Saati</div>
+<div class="font-title-md text-title-md text-primary font-bold" id="prog-hours">Haftalık 20 Saat</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Grup Kontenjanı</div>
+<div class="font-title-md text-title-md text-primary font-bold" id="prog-capacity">En fazla 14 öğrenci</div>
+</div>
+</div>
+</div>
+<!-- Bullet List -->
+<div>
+<h4 class="font-label-lg text-label-lg text-primary mb-3">Program Kapsamı</h4>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 font-body-md text-body-md text-on-surface" id="prog-bullets">
+<li class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container shrink-0"></span>
+<span class="">Her hafta TYT, iki haftada bir AYT denemesi</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container shrink-0"></span>
+<span class="">Kişisel çalışma programı</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container shrink-0"></span>
+<span class="">Etüt ve soru saati</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container shrink-0"></span>
+<span class="">Tercih danışmanlığı</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 mt-6 flex flex-wrap items-center justify-between gap-4">
+<a class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-secondary-container text-on-secondary font-label-lg text-label-lg transition-transform hover:scale-[1.02] active:scale-95 shadow-sm" href="https://wa.me/905000000000">
+              Bu program için bilgi al
+            </a>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+              Ücretsiz seviye tespit sınavı dahildir
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. The Year as a Route: "Eylül'den Haziran'a rota" -->
+<section id="rota" class="bg-surface-container py-20 px-6 lg:px-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col gap-14">
+<!-- Section Header -->
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm text-secondary-container tracking-wider uppercase font-semibold">Zaman Çizelgesi</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Eylül'den Haziran'a rota</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Sınav maratonunu adım adım, net bir takvimle yönetiyoruz.
+        </p>
+</div>
+<!-- Horizontal Route Milestones Sequence -->
+<div class="relative">
+<!-- Connecting Line for Desktop -->
+<div class="hidden lg:block absolute top-7 left-8 right-8 h-0.5 bg-outline-variant/50 -z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 relative z-10">
+<!-- Step 1: Eylül -->
+<div class="flex flex-col bg-surface-container-lowest p-6 rounded-[24px] shadow-sm relative group hover:bg-primary hover:text-on-primary transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary group-hover:bg-secondary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm mb-4 transition-colors">
+              1
+            </div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-secondary-container font-semibold">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="">Eylül</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-primary group-hover:text-on-primary transition-colors">
+              Seviye belirleme
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-primary-container mt-2 leading-relaxed transition-colors">
+              Giriş denemesiyle başlangıç noktanı belirliyoruz.
+            </p>
+</div>
+<!-- Step 2: Ekim -->
+<div class="flex flex-col bg-surface-container-lowest p-6 rounded-[24px] shadow-sm relative group hover:bg-primary hover:text-on-primary transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary group-hover:bg-secondary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm mb-4 transition-colors">
+              2
+            </div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-secondary-container font-semibold">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="">Ekim</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-primary group-hover:text-on-primary transition-colors">
+              Kişisel program
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-primary-container mt-2 leading-relaxed transition-colors">
+              Haftalık çalışma planın eksiklerine göre hazırlanıyor.
+            </p>
+</div>
+<!-- Step 3: Kasım – Nisan -->
+<div class="flex flex-col bg-surface-container-lowest p-6 rounded-[24px] shadow-sm relative group hover:bg-primary hover:text-on-primary transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary group-hover:bg-secondary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm mb-4 transition-colors">
+              3
+            </div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-secondary-container font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="">Kasım – Nisan</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-primary group-hover:text-on-primary transition-colors">
+              Haftalık denemeler
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-primary-container mt-2 leading-relaxed transition-colors">
+              Her hafta deneme, her denemeden sonra analiz.
+            </p>
+</div>
+<!-- Step 4: Her ay -->
+<div class="flex flex-col bg-surface-container-lowest p-6 rounded-[24px] shadow-sm relative group hover:bg-primary hover:text-on-primary transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary group-hover:bg-secondary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm mb-4 transition-colors">
+              4
+            </div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-secondary-container font-semibold">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="">Her ay</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-primary group-hover:text-on-primary transition-colors">
+              Rehberlik görüşmeleri
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-primary-container mt-2 leading-relaxed transition-colors">
+              Öğrenci ve veliyle birebir ilerleme görüşmesi.
+            </p>
+</div>
+<!-- Step 5: Mayıs -->
+<div class="flex flex-col bg-surface-container-lowest p-6 rounded-[24px] shadow-sm relative group hover:bg-primary hover:text-on-primary transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary group-hover:bg-secondary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm mb-4 transition-colors">
+              5
+            </div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-secondary-container font-semibold">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span class="">Mayıs</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-primary group-hover:text-on-primary transition-colors">
+              Son ay yoğun tekrar
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-primary-container mt-2 leading-relaxed transition-colors">
+              Seri denemeler ve eksik konu kampı.
+            </p>
+</div>
+<!-- Step 6: Haziran -->
+<div class="flex flex-col bg-primary text-on-primary p-6 rounded-[24px] shadow-md relative">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center font-headline-sm text-headline-sm mb-4">
+<span class="material-symbols-outlined text-[24px]">flag</span>
+</div>
+<div class="flex items-center gap-2 font-label-md text-label-md text-secondary-container font-semibold">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+<span class="">Haziran</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold mt-2 text-on-primary">
+              Sınav günü
+            </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-2 leading-relaxed">
+              Hazır, sakin ve planlı.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Why Pusula: Statement Block (Asymmetric & Strong Contrast) -->
+<section class="bg-primary text-on-primary py-24 px-6 lg:px-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Big Bold Statement -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">
+<span class="">Pusula Yaklaşımı</span>
+</div>
+<h2 class="font-display-hero text-headline-lg-mobile sm:text-headline-lg md:text-[50px] md:leading-[54px] text-on-primary tracking-tight">
+          Kalabalık sınıf değil, takip edilen öğrenci.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-lg">
+          Biz öğrencinin numara değil isim olduğu, her deneme analizinin tek tek rehberlikle incelendiği bir disiplin kültürüyüz.
+        </p>
+</div>
+<!-- Right: Three Structured Text Points -->
+<div class="lg:col-span-6 flex flex-col divide-y divide-outline/30">
+<div class="py-6 first:pt-0">
+<div class="flex items-start gap-4">
+<span class="text-secondary-container font-mono font-bold text-headline-sm">01</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-primary font-semibold mb-1">Butik ve Odaklı Sınıflar</h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+                Sınıflarımız en fazla 14 kişi; her öğretmen öğrencisini adıyla ve eksiğiyle tanır.
+              </p>
+</div>
+</div>
+</div>
+<div class="py-6">
+<div class="flex items-start gap-4">
+<span class="text-secondary-container font-mono font-bold text-headline-sm">02</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-primary font-semibold mb-1">Şeffaf Veli İletişimi</h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+                Veliler her ay deneme sonuçlarını ve devam durumunu içeren kısa bir rapor alır.
+              </p>
+</div>
+</div>
+</div>
+<div class="py-6 last:pb-0">
+<div class="flex items-start gap-4">
+<span class="text-secondary-container font-mono font-bold text-headline-sm">03</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-primary font-semibold mb-1">Kesintisiz Çalışma İmkanı</h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+                Kütüphane ve etüt alanı haftanın her günü açık.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Kütüphane / Etüt Alanı Showcase -->
+<section id="kutuphane" class="bg-surface py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-container tracking-wider uppercase font-semibold">Sessiz Çalışma Alanı</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Pusula Kütüphane</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl">
+            Sessiz çalışma alanı, hızlı internet ve her gün soru sorabileceğin etüt saatleri.
+          </p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">timer</span>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Haftalık Hizmet Kapasitesi</div>
+<div class="font-label-lg text-label-lg text-primary font-bold">Haftanın 7 Günü Açık</div>
+</div>
+</div>
+</div>
+<!-- Architectural Photo Panel & Schedule Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Photo with contextual badge -->
+<div class="lg:col-span-7 rounded-[28px] overflow-hidden relative shadow-sm min-h-[380px] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A brightly lit, modern quiet study library in an academic tutoring center with sleek wooden desks, ergonomic chairs, warm ambient lighting, student focus carrels, and clean architectural lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC90HfN3Tff1hOmnP7qSNP4Lr3sCwZEyxeICRsw1qxGtN-WETNQvmv_dYe9CGI0RdqxWq4NaOW1ZjcAAvWaCOqgHjnzb9gOTfn_zqMj8qpi9itf0YYrexVQadqSQmN6ytPx_6FMyjPxiDHFJ7WXsA4GOrDGELudsdjgVgKW1Bxy92nUTKZA-xG16PQKP1qpi8_HZiqqhv9L8OJCP3ywahUoKJ2lSwRF4B6bcEXlZBNDTz_RE5piPtY0">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-8">
+<div class="text-on-primary">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-semibold">Odaklanma Alanı</span>
+<h3 class="font-title-md text-title-md font-bold mt-2">Bireysel ve Disiplinli Masa Düzeni</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">Telefon ve gürültüden arındırılmış tam odak ortamı.</p>
+</div>
+</div>
+</div>
+<!-- Working Hours Card & Etüt Information -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-8 lg:p-10 rounded-[28px] shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md font-bold mb-6">
+<span class="material-symbols-outlined text-secondary-container">schedule</span>
+<span class="">Çalışma &amp; Etüt Saatleri</span>
+</div>
+<div class="space-y-4">
+<div class="p-4 rounded-xl bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md text-primary font-semibold">Pazartesi – Cuma</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gündüz dersleri &amp; Akşam etüdü</p>
+</div>
+<span class="font-title-md text-title-md text-primary font-mono font-bold">09:00 – 21:00</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md text-primary font-semibold">Cumartesi</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deneme sınavları &amp; Soru çözümü</p>
+</div>
+<span class="font-title-md text-title-md text-primary font-mono font-bold">09:00 – 18:00</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md text-primary font-semibold">Pazar</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Serbest sessiz kütüphane</p>
+</div>
+<span class="font-title-md text-title-md text-primary font-mono font-bold">10:00 – 17:00</span>
+</div>
+</div>
+</div>
+<div class="pt-6 mt-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">help_center</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Nöbetçi branş öğretmenlerimiz kütüphane saatlerinde takıldığınız sorular için masanızda.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Öğretmenlerimiz -->
+
+<!-- 7. Başarılar (Student Results — Large Typography) -->
+
+<!-- 8. Duyurular & SSS (Announcements + FAQ) -->
+<section class="bg-surface-container py-20 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Announcements Column -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-container tracking-wider uppercase font-semibold">Güncel Takvim</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Duyurular</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Kurs merkezimizdeki son gelişmeler ve deneme tarihleri.
+          </p>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Item 1 -->
+<div class="p-6 rounded-[24px] bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container font-bold font-mono">05 Ekim</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Kayıt</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-primary">2026-2027 kayıtlarımız devam ediyor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sınırlı kontenjan ile erken kayıt avantajlarından faydalanmak için merkezimize bekliyoruz.</p>
+</div>
+<!-- Item 2 -->
+<div class="p-6 rounded-[24px] bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container font-bold font-mono">18 Ekim</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Deneme</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Türkiye geneli TYT denemesi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tüm 12. sınıf ve mezun öğrencilerimize açık simülasyon deneme sınavı uygulanacaktır.</p>
+</div>
+<!-- Item 3 -->
+<div class="p-6 rounded-[24px] bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-container font-bold font-mono">02 Kasım</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold">Etkinlik</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-primary">Veli bilgilendirme toplantısı</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">İlk çeyrek dönem akademik gelişim karneleri ve rehberlik raporları velilerimizle paylaşılacaktır.</p>
+</div>
+</div>
+</div>
+<!-- FAQ Accordion Column -->
+<div id="sss" class="lg:col-span-7 flex flex-col gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-container tracking-wider uppercase font-semibold">Merak Edilenler</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Sıkça Sorulan Sorular</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Aklınıza takılan tüm soruların şeffaf ve net cevapları.
+          </p>
+</div>
+<div class="flex flex-col gap-3">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-title-md text-title-md text-primary font-semibold" onclick="toggleFaq(1)" type="button">
+<span class="">Kayıt için ne gerekiyor?</span>
+<span class="material-symbols-outlined text-secondary-container transition-transform" id="faq-icon-1">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed" id="faq-answer-1">
+              Kurumumuza gelip kısa bir seviye belirleme denemesine girmeniz yeterli. Öğrencinin seviyesine en uygun sınıf profili belirlenir ve kayıt aynı gün tamamlanır.
+            </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-title-md text-title-md text-primary font-semibold" onclick="toggleFaq(2)" type="button">
+<span class="">Ücretleri nasıl öğrenebilirim?</span>
+<span class="material-symbols-outlined text-secondary-container transition-transform" id="faq-icon-2">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed" id="faq-answer-2">
+              Ücretler öğrencinin sınıf seviyesine, tercih edilen ders saatine ve haftalık etüt yoğunluğuna göre değişir. Telefon veya WhatsApp hattımız üzerinden şeffaf şekilde anında bilgi alabilirsiniz.
+            </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-title-md text-title-md text-primary font-semibold" onclick="toggleFaq(3)" type="button">
+<span class="">Denemeler ne sıklıkla yapılıyor?</span>
+<span class="material-symbols-outlined text-secondary-container transition-transform" id="faq-icon-3">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed" id="faq-answer-3">
+              YKS grubunda her hafta TYT, iki haftada bir AYT; LGS grubunda ise her hafta Türkiye geneli kalibresinde deneme yapılır. Her sınav sonrasında konu analiz karnesi verilir.
+            </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-title-md text-title-md text-primary font-semibold" onclick="toggleFaq(4)" type="button">
+<span class="">Veliler gelişimi nasıl takip ediyor?</span>
+<span class="material-symbols-outlined text-secondary-container transition-transform" id="faq-icon-4">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed" id="faq-answer-4">
+              Her ay deneme sonuçları ve devam durumunu içeren rapor paylaşılır, ayrıca düzenli aralıklarla veli-öğrenci-rehberlik birebir görüşmesi yapılarak yol haritası güncellenir.
+            </div>
+</div>
+<!-- FAQ 5 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-title-md text-title-md text-primary font-semibold" onclick="toggleFaq(5)" type="button">
+<span class="">Servis var mı?</span>
+<span class="material-symbols-outlined text-secondary-container transition-transform" id="faq-icon-5">expand_more</span>
+</button>
+<div class="hidden px-5 pb-5 font-body-md text-body-md text-on-surface-variant leading-relaxed" id="faq-answer-5">
+              Evet, Dörtyol merkez ve yakın mahalleler (Numune Evler, Yeşilköy, Payas sınır hatları vb.) için güvenli öğrenci servis imkânımız mevcuttur.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. İletişim & Hızlı Bilgi Formu -->
+<section class="bg-primary text-on-primary py-24 px-6 lg:px-12 relative overflow-hidden" id="iletisim-formu">
+<div class="max-w-7xl mx-auto flex flex-col gap-16 relative z-10">
+<!-- Section Title -->
+<div class="max-w-2xl">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container text-secondary-container font-label-sm text-label-sm font-semibold">
+          Bizimle İletişime Geçin
+        </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mt-3">
+          Rotanızı Birlikte Çizelim
+        </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mt-2">Dörtyol'daki modern merkezimize davetlisiniz. Telefon, WhatsApp veya yüz yüze görüşmeyle hedeflerinizi birlikte planlayalım.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Contact Information & Location -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-primary font-semibold">Adres</h3>
+<p class="font-body-md text-body-md text-on-primary-container mt-1">
+                  Örnek Mah. Örnek Cad. No: 1, 31600 Dörtyol / Hatay
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-primary font-semibold">Telefon &amp; WhatsApp</h3>
+<p class="font-body-md text-body-md text-on-primary-container mt-1">
+                  Tel: <a class="hover:text-on-primary transition-colors" href="tel:03260000000">0 (326) 000 00 00</a>
+</p>
+<p class="font-body-md text-body-md text-on-primary-container">
+                  WhatsApp: <a class="hover:text-on-primary transition-colors" href="https://wa.me/905000000000">0 (500) 000 00 00</a>
+</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-primary font-semibold">E-posta</h3>
+<p class="font-body-md text-body-md text-on-primary-container mt-1">
+<a class="hover:text-on-primary transition-colors" href="mailto:info@pusulakurs.example.com">info@pusulakurs.example.com</a>
+</p>
+</div>
+</div>
+</div>
+<!-- Static Map Visual Container with data-location -->
+<div class="w-full h-56 rounded-2xl bg-cover bg-center overflow-hidden shadow-inner relative group" data-location="Dörtyol, Hatay, Turkey" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLM0xcfad0c1ZxO7J9ECCDf93bqJTWDlQMgr0EyXxa2lpitC71JQFdMUkU2xghnqCsjb_gfmHM98TP31DEbjrEiuNmotbcPgaqd44SDE5cWigol6cpTpwSpYX21Im8q4ZNYS7pU0C5UKYW03BV61DdM5-iowoP6EoliMnXvZ001KTjdlGXh3OaEWvKAdJaXKLDuv1VzInpD4rohlirwOsYh1z9rCFtdCYGYNb4VJFemFx909FI6P9v')">
+<div class="absolute inset-0 bg-primary/40 flex items-center justify-center">
+<div class="bg-primary-container text-on-primary px-4 py-2 rounded-full font-label-sm text-label-sm flex items-center gap-2 shadow-lg">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">place</span>
+<span class="">Dörtyol Merkez Kampüsü</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Minimalist Form Card -->
+<div class="lg:col-span-7 bg-surface-container-lowest text-on-surface p-8 sm:p-10 rounded-[28px] shadow-xl flex flex-col justify-between gap-8"><div class="space-y-6"><div class="flex items-center justify-between border-b border-surface-container-high pb-4"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span><span class="font-label-lg text-label-lg text-primary font-bold">Doğrudan İletişim Kanalları</span></div><span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Hızlı Yanıt</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Dörtyol merkez kampüsümüze dilediğiniz zaman uğrayabilir, seviye tespit ve kayıt danışmanlığı için bize telefon veya WhatsApp üzerinden anında ulaşabilirsiniz.</p><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2"><a class="flex items-center justify-center gap-3 py-4 px-6 rounded-2xl bg-secondary-container text-on-secondary font-label-lg text-label-lg font-bold shadow-md hover:bg-secondary transition-all hover:scale-[1.01] active:scale-95" href="https://wa.me/905000000000" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[22px]">chat</span><span class="">WhatsApp'tan Yaz</span></a><a class="flex items-center justify-center gap-3 py-4 px-6 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary/80 transition-all hover:scale-[1.01] active:scale-95" href="tel:03260000000"><span class="material-symbols-outlined text-[22px]">call</span><span class="">Hemen Ara</span></a></div></div><div class="p-6 rounded-2xl bg-surface-container space-y-4"><div class="flex items-center gap-2 text-primary font-label-lg text-label-lg font-bold"><span class="material-symbols-outlined text-secondary-container text-[20px]">schedule</span><span class="">Ziyaret &amp; Danışmanlık Saatleri</span></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-body-sm text-body-sm text-on-surface-variant"><div><span class="font-medium text-primary block">Pazartesi – Cumartesi</span><span class="">08:30 – 20:00 (Yüz Yüze Görüşme)</span></div><div><span class="font-medium text-primary block">Pazar</span><span class="">10:00 – 17:00 (Nöbetçi Rehberlik)</span></div></div></div><div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm pt-2"><span class="material-symbols-outlined text-secondary-container text-[18px]">verified</span><span class="">Randevusuz ziyaret edebilir veya öncesinde arayarak rehberlik planlaması yapabilirsiniz.</span></div></div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript Handling Tabs, Compass Needle Angle, and FAQ Accordions -->
+<script>
+    const programData = {
+      lgs: {
+        title: "LGS Hazırlık (8. Sınıf)",
+        target: "Hedef Kitle: 8. sınıf öğrencileri",
+        hours: "Haftalık 16 Saat",
+        capacity: "En fazla 12 öğrenci",
+        angle: 315,
+        degrees: "315° KB",
+        badgeTitle: "315° LGS İstikameti",
+        badgeDesc: "Nitelikli liseler için yeni nesil soru mantığı, paragraf ve sözel-sayısal mantık kampı devrede.",
+        bullets: [
+          "Her hafta Türkiye geneli LGS denemesi",
+          "Yeni nesil matematik özel soru saati",
+          "Birebir rehberlik ve koçluk takibi",
+          "Nitelikli fen lisesi hedef analizi"
+        ]
+      },
+      yks: {
+        title: "YKS Hazırlık (TYT-AYT)",
+        target: "Hedef Kitle: 11. sınıf, 12. sınıf ve mezun öğrenciler",
+        hours: "Haftalık 20 Saat",
+        capacity: "En fazla 14 öğrenci",
+        angle: 45,
+        degrees: "045° KD",
+        badgeTitle: "45° Kuzeydoğu Rotası",
+        badgeDesc: "Üniversite sınavı için yoğunlaştırılmış etüt, seri deneme ve koçluk döngüsü devrede.",
+        bullets: [
+          "Her hafta TYT, iki haftada bir AYT denemesi",
+          "Kişisel çalışma programı",
+          "Etüt ve soru saati",
+          "Tercih danışmanlığı"
+        ]
+      },
+      ara: {
+        title: "Ara Sınıf Takviye (9, 10, 11)",
+        target: "Hedef Kitle: Lise 9, 10 ve 11. sınıf öğrencileri",
+        hours: "Haftalık 12 Saat",
+        capacity: "En fazla 12 öğrenci",
+        angle: 135,
+        degrees: "135° GD",
+        badgeTitle: "135° Temel Sağlamlaştırma",
+        badgeDesc: "Okul yazılılarına tam hazırlık, OBP puanını artırma ve temel YKS konularını erkenden bitirme rotası.",
+        bullets: [
+          "Okul yazılı sınavlarına hazırlık kampları",
+          "Konu pekiştirme etütleri",
+          "Ödev ve proje takip sistemi",
+          "Düzenli konu tarama testleri"
+        ]
+      },
+      ozel: {
+        title: "Birebir Özel Ders",
+        target: "Hedef Kitle: Bireysel çalışma hızına ihtiyaç duyan tüm öğrenciler",
+        hours: "Esnek Planlama",
+        capacity: "Birebir (1 Öğrenci)",
+        angle: 225,
+        degrees: "225° GB",
+        badgeTitle: "225° Kişiye Özel Seyir",
+        badgeDesc: "Eksik görülen spesifik kazanımlara nokta atışı müdahale, öğretmenle tam zamanlı odak.",
+        bullets: [
+          "Öğrencinin öğrenme hızına özel anlatım",
+          "Anında soru-cevap ve çözüm yöntemi aktarımı",
+          "Esnek gün ve saat planlaması",
+          "İstenilen branşta nokta atışı konu tekrarı"
+        ]
+      }
+    };
+
+    function selectProgram(key) {
+      const data = programData[key];
+      if (!data) return;
+
+      // Update Tab Styles
+      ['lgs', 'yks', 'ara', 'ozel'].forEach(tabKey => {
+        const btn = document.getElementById('tab-' + tabKey);
+        if (tabKey === key) {
+          btn.className = "program-tab flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-primary text-on-primary shadow-md transition-all text-left relative overflow-hidden";
+        } else {
+          btn.className = "program-tab flex items-center justify-between p-4 sm:p-5 rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all text-left";
+        }
+      });
+
+      // Rotate Needle
+      const needle = document.getElementById('interactive-needle');
+      if (needle) {
+        needle.style.transform = `rotate(${data.angle}deg)`;
+      }
+
+      // Update text details
+      document.getElementById('prog-title').innerText = data.title;
+      document.getElementById('prog-target').innerText = data.target;
+      document.getElementById('prog-hours').innerText = data.hours;
+      document.getElementById('prog-capacity').innerText = data.capacity;
+      document.getElementById('needle-degrees').innerText = data.degrees;
+      document.getElementById('panel-badge-title').innerText = data.badgeTitle;
+      document.getElementById('panel-badge-desc').innerText = data.badgeDesc;
+
+      // Update Bullets
+      const bulletsList = document.getElementById('prog-bullets');
+      bulletsList.innerHTML = data.bullets.map(b => `
+        <li class="flex items-center gap-2.5">
+          <span class="w-2 h-2 rounded-full bg-secondary-container shrink-0"></span>
+          <span>${b}</span>
+        </li>
+      `).join('');
+    }
+
+    function toggleFaq(id) {
+      const answer = document.getElementById('faq-answer-' + id);
+      const icon = document.getElementById('faq-icon-' + id);
+      if (!answer) return;
+
+      const isHidden = answer.classList.contains('hidden');
+      if (isHidden) {
+        answer.classList.remove('hidden');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      } else {
+        answer.classList.add('hidden');
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      }
+    }
+
+    function handleFormSubmit() {
+      const banner = document.getElementById('form-success-banner');
+      const submitBtn = document.getElementById('submit-btn');
+      if (banner) banner.classList.remove('hidden');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Talebiniz Alındı</span><span class="material-symbols-outlined text-[18px]">check_circle</span>';
+        submitBtn.classList.add('opacity-75');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary pt-16 pb-8 shadow-[0_-1px_16px_rgba(0,0,0,0.08)]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12"><div class="lg:col-span-4 space-y-4"><div class="flex items-center gap-3"><img alt="Pusula Kurs Merkezi Logo" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1XrWjGIy0YwVV2v1Ji_GslnZ-_Wc68GvIeIQiYSXqBgybAqGP9-RH1ebrlx6UBDBMfdf7m3mEf8DBLqIqAeuZww6f-wOgiUgIy1pJ17pK1JFLwiKwi2kUf3GodRow38_NtwjzVtAM-eoHnX8wtgUrsik7fFsj1J-VkOWf4lsP6R_YcAgoebrqseYeg8JNKNq3zoiOsgm91vDvVvRYNX5FYqHiaCydM_9LDQXqsEx2TGCFgmMpNfC4DEgcE"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-primary leading-none">Pusula</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Kurs Merkezi</span></div></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed pr-6">Modern eğitim mimarisi ve disiplinli takip modeli ile LGS ve YKS rotanızı kararlılıkla çiziyoruz. Dörtyol'un geleceğe açılan akademik pusulası.</p><div class="flex items-center gap-3 pt-2"><a aria-label="Instagram" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-secondary-container hover:text-on-secondary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-secondary-container hover:text-on-secondary transition-colors" href="https://wa.me/903260000000"><span class="material-symbols-outlined text-[18px]">chat</span></a><a aria-label="YouTube" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary hover:bg-secondary-container hover:text-on-secondary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a></div></div><div class="lg:col-span-3 space-y-3"><h3 class="font-title-md text-title-md text-on-primary tracking-tight">Hızlı Erişim</h3><ul class="space-y-2 font-body-sm text-body-sm text-on-primary-container"><li class=""><a class="hover:text-on-primary transition-colors" data-path="programlar" href="#hedef-secici">LGS &amp; YKS Programları</a></li><li class=""><a class="hover:text-on-primary transition-colors" data-path="rota" href="#rota">Rehberlik &amp; Rota Sistemi</a></li><li class=""><a class="hover:text-on-primary transition-colors" data-path="kutuphane" href="#kutuphane">Sessiz Çalışma Kütüphanesi</a></li><li></li><li></li><li class=""><a class="hover:text-on-primary transition-colors" data-path="sss" href="#sss">Sıkça Sorulan Sorular</a></li></ul></div><div class="lg:col-span-5 space-y-4"><h3 class="font-title-md text-title-md text-on-primary tracking-tight">İletişim &amp; Konum</h3><div class="space-y-3 font-body-sm text-body-sm text-on-primary-container"><div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-container shrink-0 text-[20px]">location_on</span><span class="">Numune Evler Mah. İstasyon Cad. No: 14/A, Dörtyol / Hatay</span></div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary-container shrink-0 text-[20px]">call</span><a class="hover:text-on-primary transition-colors" href="tel:03260000000">0 (326) 000 00 00</a></div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary-container shrink-0 text-[20px]">chat</span><a class="hover:text-on-primary transition-colors" href="https://wa.me/903260000000">WhatsApp Danışma Hattı</a></div><div class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary-container shrink-0 text-[20px]">schedule</span><div><p class="">Hafta İçi &amp; Cumartesi: 08:30 - 20:00</p><p class="text-xs opacity-80">Kütüphane Etüt Saatleri: 08:30 - 22:00</p></div></div></div></div></div><div class="pt-8 mt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-on-primary-container"><p class="">© 2025 Pusula Kurs Merkezi. Tüm hakları saklıdır. Dörtyol / Hatay.</p><div class="flex items-center gap-6"><a class="hover:text-on-primary transition-colors" href="#">KVKK Aydınlatma Metni</a><a class="hover:text-on-primary transition-colors" href="#">Gizlilik Politikası</a></div></div></div></footer>
+
+</body></html>
